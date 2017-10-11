@@ -258,7 +258,7 @@ SndBuf mySound => dac;
 //(1) obtiene el directorio actual de trabajo
 me.dir() => string path;
 //archivo de sonido que queremos reproducir
-"/samples/snare_01.wav" => string filename;
+"/audio/snare_01.wav" => string filename;
 
 // signo + concatena strings
 //(2) construye una direccion completa del archivo de sonido
@@ -277,4 +277,32 @@ filename => mySound.read;
 
 //hacer que el tiempo transcurra para poder escuchar el sonido
 second => now;
+```
+
+## Reproducción en reversa
+
+```chuck
+//Reproducción de sonidos en reversa
+//por programador de ChucK, 4102 oiluj
+//La fecha está al revés, tal como el sonido dentro de poco
+SndBuf mySound => dac;
+
+//(1) Construye la dirección del archivo y para cargar en SndBuf
+me.dir() + "/audio/hihat_04.wav" => mySound.read;
+
+//(2) Averigua cuán largo es el sonido (en número de samples)
+mySound.samples() => int numSamples;
+
+//reproduce una vez el sonido hacia adelante
+0 => mySound.pos;
+//(3) deja que el sonido sea reproducido
+numSamples :: samp => now;
+
+//y una vez hacia atrás
+//(4) Hace que la posición del buffer sea el final del archivo
+numSamples => mySound.pos;
+//(5) Hace que la reproducción sea en reversa
+-1.0 => mysound.rate;
+// Reproduce el archivo completo, pero en reversa
+numSamples :: samp => now;
 ```

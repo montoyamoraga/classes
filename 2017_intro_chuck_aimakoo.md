@@ -306,3 +306,71 @@ numSamples => mySound.pos;
 // Reproduce el archivo completo, pero en reversa
 numSamples :: samp => now;
 ```
+
+## Mútiples samples
+
+```chuck
+//Reproduce múltiples sonidos
+//por programador de ChucK, julio 2023
+SndBuf snare => dac;
+
+//construye y puebla un arreglo de direcciones de archivos de sonido + nombres
+//(1) Crea y puebla un arreglo de nombres de archivos de sonido
+string snare_samples[3];
+me.dir() + "/audio/snare_01.wav" => snare_samples[0];
+me.dir() + "/audio/snare_02.wav" => snare_samples[1];
+me.dir() + "/audio/snare_03.wav" => snare_samples[2];
+
+//bulce infinito
+while (true)
+{
+  //escoge un número aleatorio entre 0 y el número de archivos - 1
+  //(2) Escoge un número aleatorio entre 0 y 2
+  Math.random2(0, snare_samples.cap() - 1) => int which;
+
+  //carga ese archivo
+  //(3) Carga el archivo aleatorio asociado
+  snare_samples[which] => snare.read;
+
+  //Deja que el tiempo transcurra para la reproducción
+  0.5 :: second => now;
+}
+```
+
+## Máquina de ritmos
+
+```chuck
+//Máquina de ritmos, versión 1.0
+// por programador con ritmo, 31 de diciembre 1999
+
+//SndBufs para bombo (kick, bass drum) y caja (snare)
+//(1) SndBuf a mezclador Gain master y a dac
+SndBuf kick => Gain master => dac;
+//(2) Otro sndBuf al mezclador Gain master
+SndBuf snare => master;
+
+//carga algunos archivos
+//(3) Carga tus archivos de sonido
+me.dir() + "/audio/kick_01.wav" => kick.read;
+me.dir() + "/audio/snare_01.wav" => snare.read;
+
+while(true)
+{
+  //En el tiempo 1, toca solo el bombo
+  //(4) En los tiempos impares, solo toca el bombo
+  0 => kick.pos;
+  0.6 :: second => now;
+
+  //Toca ambos tambores en el tiempo 2
+  //(5) En cada tiempo par, toca tanto el bombo como la caja
+  0 => kick.pos;
+  0 => snare.pos;
+  0.6 :: second => now;
+}
+```
+
+## Grabar
+
+```shell
+chuck example.ck rec-auto.ck
+```

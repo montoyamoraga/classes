@@ -126,7 +126,7 @@ quarter /2 => dur eighth;
 
 ## MIDI
 
-> ```chuck
+```chuck
 <<< Std.mtof(64) >>>;
 ```
 
@@ -134,7 +134,6 @@ quarter /2 => dur eighth;
 //cadena de sonido
 TriOsc t => dac;
 0.4 => t.gain;
-```
 
 //bucle
 for (0 => int i; i < 127; i++) {

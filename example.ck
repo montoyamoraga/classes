@@ -12,8 +12,8 @@ SndBuf snare => master;
 me.dir() + "/audio/kick_01.wav" => kick.read;
 me.dir() + "/audio/snare_01.wav" => snare.read;
 
-while(true)
-{
+//while(true)
+//{
   //En el tiempo 1, toca solo el bombo
   //(4) En los tiempos impares, solo toca el bombo
   0 => kick.pos;
@@ -24,5 +24,5 @@ while(true)
   0 => kick.pos;
   0 => snare.pos;
   0.6 :: second => now;
-}
+//}
 

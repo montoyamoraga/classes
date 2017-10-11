@@ -371,6 +371,16 @@ while(true)
 
 ## Grabar
 
+Abrir terminal en Mac o cmd en Windows, hacer cd a la carpeta workshops-master
+
+```shell
+cd Desktop
+cd workshops-master
+```
+Ejecutar con chuck el archivo a sonar seguido de rec-auto.ck
+
 ```shell
 chuck example.ck rec-auto.ck
 ```
+
+y queda un archivo wav, yay! =)

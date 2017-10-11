@@ -147,3 +147,41 @@ for (0 => int i; i < 127; i++) {
   200 :: ms => now;
 }
 ```
+
+## Conversión
+
+| Método           | Resultado | Descripción                       |
+| :--------------  | :-------- | :-------------------------------- |
+| Std.atoi(string) | int       | Convierte ASCII (string) en int   |
+| Std.atof(string) | float     | Convierte ASCII (string) en float |
+| Std.itoa(int)    | string    | Convierte int en ASCII (string)   |
+| Std.ftoa(float)  | string    | Convierte float en ASCII (string) |
+
+## Aleatoreidad
+
+| Método                               | Resultado | Descripción |
+| :----------------------------------  | :-------- | :---------- |
+| Math.random()                        | int       | Genera enteros aleatorios entre 0 y Math.RAMDOM_MAx   |
+| Math.random2(int min, int max)       | int       | Genera enteros aleatorios en el rango [min, max]|
+| Math.randomf()                       | float     | Genera números de punto flotante en el rango [0, 1] |
+| Math.random2f(float min, float max)  | float     | Genera números de punto flotante en el rango [min, max] |
+
+```chuck
+//Música aleatoria de onda cuadrada
+SqrOsc s => dac;
+
+//(1)El bucle for toca 16 notas
+for (0 => int i; i < 16; i++) {
+  //(2) Nota entera aleatoria (C3 - C5)
+  Math.random2(48, 72) => int myNote;
+  //(3) Ganancia aleatoria entre .05 y .9
+  Math.random2f(0.05, 0.9) => float myGain;
+  //(4) Imprime la nota y la ganancia actuales
+  <<< myNote, myGain>>>;
+  //(5) Define la frecuencia y la ganancia del oscilador
+  Std.mtof(myNote) => s.freq;
+  myGain => s.gain;
+  //(6) Deja que cada note suene durante 1/5 de segundo
+  0.2 :: second => now;
+}
+```

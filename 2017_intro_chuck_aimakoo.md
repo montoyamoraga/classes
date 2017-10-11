@@ -246,3 +246,35 @@ for (0 => int i; i < a.cap(); i++) {
   0.2 :: second => now;
 }
 ```
+
+## Lectura de archivos
+
+```chuck
+//Uso de SndBuf para reproducir un archivo de sonido
+//por programador de ChucK, diciembre 2050
+SndBuf mySound => dac;
+
+//obtener la direccion del directorio
+//(1) obtiene el directorio actual de trabajo
+me.dir() => string path;
+//archivo de sonido que queremos reproducir
+"/samples/snare_01.wav" => string filename;
+
+// signo + concatena strings
+//(2) construye una direccion completa del archivo de sonido
+path + filename => filename;
+
+//indicarle a SndBuf que lea este archivo
+//(3) hacer ChucKing de un string al metodo .read de SndBuf causa que cargue ese archivo
+filename => mySound.read;
+
+//definir la ganancia
+0.5 => mySound.gain;
+
+//reproducir el sonido desde el princpio
+//hacer ChucKing de un numero al metodo .pos (de posicion) de un SndBuf causa que empiece a reproducirse desde esta posicion en el arreglo (en este caso, desde el principio)
+0 => mySound.pos;
+
+//hacer que el tiempo transcurra para poder escuchar el sonido
+second => now;
+```

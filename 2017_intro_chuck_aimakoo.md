@@ -185,3 +185,64 @@ for (0 => int i; i < 16; i++) {
   0.2 :: second => now;
 }
 ```
+
+## Arreglos
+
+```chuck
+[57, 57, 64, 64, 66, 66, 64] @=> int a[];
+
+<<< a[0], a[1], a[2], a[3], a[4], a[5], a[6] >>>
+```
+
+```chuck
+//Declara e inicializa un arreglo
+[57, 57, 64, 64, 66, 66, 64] @=> int a[];
+
+//lectura del arreglo según índice
+//(1) busca la nota en el arreglo según un índice entero
+a[2] => int myNote;
+
+//(2) lo imprime
+<<< myNote >>>;
+
+//¿quieres modificar los datos? ¡cero problema! (imprime también)
+//(3) cambia el valor elemento del arreglo según índice
+61 => a[2];
+<<< myNote, a[2] >>>;
+
+<<< a[0], a[1], a[2], a[3], a[4], a[5], a[6] >>>
+```
+
+```chuck
+//usemos un oscilador de onda cuadrada
+//(1) oscilador de onda cuadrada para la melodía
+SqrOsc s => dac;
+
+//ganancias para separar nuestras notas
+//(2) ganancias de notas encendidas y apgadas
+0.7 => float onGain;
+0.0 => float offGain;
+
+//declarar e inicailzar un arreglo de notas MIDI
+//(3) arreglo de notas MIDI para la melodía
+[57, 57, 64, 64, 66, 66, 64, 62, 62, 61, 61, 59, 59, 57] @=> int a[];
+
+//bucle que recorre cada element del arreglo
+for (0 => int i; i < a.cap(); i++) {
+  //(4) imprime el índice y la nota del arreglo
+  <<< i, a[i] >>>;
+
+  //define la frecuencia y la ganancia para prender tu nota
+  //(5) define la altura de las notas de melodía
+  Std.mtof(a[i]) => s.freq;
+  //(6) encendido de la nota
+  onGain => s.gain;
+  //duración de la nota encendida
+  0.3 :: second => now;;
+
+  //apaga tu nota para separarla de la siguiente
+  //(8) nota apagada
+  offGain => s.gain;
+  0.2 :: second => now;
+}
+```

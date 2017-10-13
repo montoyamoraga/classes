@@ -111,7 +111,7 @@ Estos proyecto incluyen las siguientes bibliotecas:
 
 * (00_z)[http://alpha.editor.p5js.org/montoyamoraga/sketches/HkfZczChb]: cambiar color del fondo según posición de la mano derecha en el eje z.
 
-* (00_z)[http://alpha.editor.p5js.org/montoyamoraga/sketches/HkfZczChb]: cambiar color del fondo según posición de la mano derecha en el eje z.
+* (01_sonido)[http://alpha.editor.p5js.org/montoyamoraga/sketches/rJnuf7CnW]: cambiar amplitud de sonido según posición de la mano derecha en el eje z.
 
 
 

@@ -100,7 +100,16 @@ Tenemos los siguientes modos disponibles:
 
 ## Ejemplos en p5.js
 
-Como referencia, clase [Introduction to Computational Media: Dancer's edition](https://itp.nyu.edu/classes/dance-f16/kinect/), por Dan O'Sullivan y William Moulton.
+Como referencia, usaremos código de la clase [Introduction to Computational Media: Dancer's edition](https://itp.nyu.edu/classes/dance-f16/kinect/), por Dan O'Sullivan y William Moulton.
+
+Estos proyecto incluyen las siguientes bibliotecas:
+
+* p5.js: disponible en [p5js.org](https://p5js.org/)
+* p5.dom.js: disponible en [p5js.org](https://p5js.org/)
+* p5.sound.js: disponible en [p5js.org](https://p5js.org/)
+* kinectron.bundle.js: disponible en [github.com/lisajamhoury/kinectron](https://github.com/lisajamhoury/kinectron)
+
+* (00_z)[http://alpha.editor.p5js.org/montoyamoraga/sketches/HkfZczChb]: cambiar color del fondo según posición de la mano derecha en el eje z.
 
 * (00_z)[http://alpha.editor.p5js.org/montoyamoraga/sketches/HkfZczChb]: cambiar color del fondo según posición de la mano derecha en el eje z.
 

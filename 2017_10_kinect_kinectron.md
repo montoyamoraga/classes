@@ -54,7 +54,20 @@ Recibiremos los datos de la Kinect en nuestros computadores, usando p5.js.
 
 [p5.js](https://p5js.org/) es una herramienta web para programación creativa creada por [Lauren McCarthy](http://lauren-mccarthy.com/). Permite crear sitios web con gráficas y sonidos interactivos.
 
-Hoy usaremos p5.js para
+Hoy usaremos p5.js para visualizar y manipular en nuestros computadores la información enviada por la Kinect.
+
+## Ejemplos de obras con Kinect
+
+* [Two skeletons](http://www.caiyuli.com/work/two-skeletons/) (2015), por Yuli Cai, Adam Ray Dyer y Aarón Montoya-Moraga.
+
+* [Puppet](https://vimeo.com/168505358) (2015), por Yuli Cai, Donald Shorter Jr. y Aarón Montoya-Moraga.
+
+* [6:34](https://vimeo.com/197487076) (2016), por Yuli Cai, Donald Shorter Jr. y Aarón Montoya-Moraga.
+
+* [50 shades of eyes](http://www.caiyuli.com/work/50-shades-of-eyes/), por Yuli Cai.
+
+* [Facing you](http://lisajamhoury.com/portfolio/facing-you/) (2017), por Lisa Jamhoury.
+
 
 ## Instrucciones
 
@@ -86,6 +99,12 @@ Tenemos los siguientes modos disponibles:
 * STOP ALL: detiene la transmisión
 
 ## Ejemplos en p5.js
+
+Como referencia, clase [Introduction to Computational Media: Dancer's edition](https://itp.nyu.edu/classes/dance-f16/kinect/), por Dan O'Sullivan y William Moulton.
+
+* (00_z)[http://alpha.editor.p5js.org/montoyamoraga/sketches/HkfZczChb]: cambiar color del fondo según posición de la mano derecha en el eje z.
+
+
 
 ## Agradecimientos
 

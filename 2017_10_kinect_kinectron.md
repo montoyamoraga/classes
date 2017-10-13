@@ -3,15 +3,55 @@
 
 ## Sobre el taller
 
-Este taller fue dictado por Aarón Montoya-Moraga en el Centro Cultural España, Santiago de Chile, en el marco del festival Aimakoo, miércoles 11 de octubre 2017.
+Este taller fue dictado por [Aarón Montoya-Moraga](http://montoyamoraga.io/) en el Campus Oriente de la Universidad Católica de Chile, para el Postgrado de Artes UC, viernes 13 de octubre 2017, entre 10am y 1pm
 
 ## Asistentes
 
-Un minuto por persona, quiénes son, cuánto saben de sonido y de programación
+Un minuto por persona, quiénes son, cuánto saben de programación.
+
+## Contenidos
+
+Hoy veremos:
+
+* Introducción al sensor Kinect
+* Introducción al software Kinectron
+* Fundamentos de programación: variables y funciones
+* Introducción a p5.js para programación interactiva
+* Manipulación en vivo de elementos audiovisuales usando movimiento
+
+## Sobre Kinect
+
+Kinect es un sensor desarrollado por Microsoft que cuenta con
+* Cámara RGB
+* Cámara infrarroja
+* Sensor de profundidad
+* Software para la detección y monitoreo de cuerpos humanos / esqueletos / extremidades.
+
+Existen dos versiones de Kinect:
+
+* Kinect 360 (2010, primera generación)
+* Kinect One (2013, segunda generación)
+
+Hoy usaremos Kinect One.
+
+La Kinect se puede conectar vía USB 3.0 al computador
+
+* Windows: todas las funcionalidades,
+* Mac solamente las cámaras, no el software.
+
+## Software Kinectron
+
+[Kinectron](https://github.com/lisajamhoury/kinectron) es un software de código abierto y gratuito desarrollado activamente por [Lisa Jamhoury](http://lisajamhoury.com/) y [Shawn van Every](https://tisch.nyu.edu/about/directory/itp/1838206356).
+
+Kinectron permite la
+
+## p5.js
+
+[p5.js](https://p5js.org/)
 
 ## Instrucciones
 
-Instalar ChucK: ir a  [http://chuck.cs.princeton.edu/](http://chuck.cs.princeton.edu/) y a download ChucK.
+Crear cuenta del editor de p5.js: ir a  [https://alpha.editor.p5js.org/](https://alpha.editor.p5js.org/) y crear una cuenta.
 
 ## Primer programa
 

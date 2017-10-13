@@ -1,5 +1,4 @@
-# 2017_intro_chuck_aimakoo.md
-
+# 2017_10_kinect_kinectron.md
 
 ## Sobre el taller
 

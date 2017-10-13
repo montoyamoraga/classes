@@ -43,7 +43,9 @@ La Kinect se puede conectar vía USB 3.0 al computador
 
 [Kinectron](https://github.com/lisajamhoury/kinectron) es un software de código abierto y gratuito desarrollado activamente por [Lisa Jamhoury](http://lisajamhoury.com/) y [Shawn van Every](https://tisch.nyu.edu/about/directory/itp/1838206356).
 
-Kinectron permite la
+Kinectron permite que un computador Windows sea un servidor de datos e imágenes desde una Kinect, pudiendo así hacer streaming a varios computadores, incluyendo computadores no Windows.
+
+Para instalar Kinectron, visitar [https://github.com/lisajamhoury/kinectron](https://github.com/lisajamhoury/kinectron) y descargar desde "Releases".
 
 ## p5.js
 

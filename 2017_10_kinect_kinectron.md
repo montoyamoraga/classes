@@ -115,13 +115,9 @@ Estos proyecto incluyen las siguientes bibliotecas:
 
 * (02_imagen)[http://alpha.editor.p5js.org/montoyamoraga/sketches/rk_3SQCnb]: dibujar imagen según posición ambas manos.
 
-* (03_)[http://alpha.editor.p5js.org/montoyamoraga/sketches/HkwvuXC2Z]: dibujar imagen según posición ambas manos.
+* (03_mano_cerrada)[http://alpha.editor.p5js.org/montoyamoraga/sketches/HkwvuXC2Z]: dibujar imagen con mano derecha cerrada.
 
-
-
-
-
-
+* (04_varios_esqueletos)[http://alpha.editor.p5js.org/montoyamoraga/sketches/H1tIo703b]: dibujar varios esqueletos de distintos colores
 
 ## Agradecimientos
 

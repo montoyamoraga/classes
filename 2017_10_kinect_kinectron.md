@@ -113,6 +113,14 @@ Estos proyecto incluyen las siguientes bibliotecas:
 
 * (01_sonido)[http://alpha.editor.p5js.org/montoyamoraga/sketches/rJnuf7CnW]: cambiar amplitud de sonido según posición de la mano derecha en el eje z.
 
+* (02_imagen)[http://alpha.editor.p5js.org/montoyamoraga/sketches/rk_3SQCnb]: dibujar imagen según posición ambas manos.
+
+* (03_)[http://alpha.editor.p5js.org/montoyamoraga/sketches/HkwvuXC2Z]: dibujar imagen según posición ambas manos.
+
+
+
+
+
 
 
 ## Agradecimientos

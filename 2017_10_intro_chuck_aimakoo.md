@@ -1,4 +1,4 @@
-# 2017_intro_chuck_aimakoo.md
+# 2017_10_intro_chuck_aimakoo.md
 
 
 ## Sobre el taller

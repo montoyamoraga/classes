@@ -4,9 +4,12 @@
 
 Este taller fue dictado por [Aarón Montoya-Moraga](http://montoyamoraga.io/) en el Campus Oriente de la Universidad Católica de Chile, para el Postgrado de Artes UC, viernes 13 de octubre 2017, entre 10am y 1pm.
 
-## Asistentes
+[kinect_kinectron0](https://github.com/montoyamorag/workshops/raw/gh-pages/pictures/2017-10-13-postgrado_uc0.jpg "kinect_kinectron0")
 
-12 alumnos. Presentación de un minuto por persona, quiénes son, cuánto saben de programación.
+[kinect_kinectron1](https://github.com/montoyamorag/workshops/raw/gh-pages/pictures/2017-10-13-postgrado_uc1.jpg "kinect_kinectron1")
+
+[kinect_kinectron2](https://github.com/montoyamorag/workshops/raw/gh-pages/pictures/2017-10-13-postgrado_uc2.jpg "kinect_kinectron2")
+
 
 ## Contenidos
 
@@ -121,9 +124,9 @@ Estos proyecto incluyen las siguientes bibliotecas:
 
 ## Agradecimientos
 
-* A María José Contreras y Postgrado Artes UC por la invitación.
-* A Lisa Jamhoury y Shawn van Every por Kinectron.
-* A Lauren McCarthy y todo el equipo de p5.js.
-* A Yuli Cai y Donald Shorter Jr. por todas las horas que hemos compartido usando y descubriendo las posibilidades de la Kinect para performance en vivo.
-* A Mimi Yin por su clase Choreographic Interventions.
-* A Kat Sullivan, Sergio Mora-Díaz, Elizabeth White y Tiriree Kananuruk por mantener el Movement Collective de NYU ITP.
+* A [María José Contreras](http://www.mariajosecontreras.com/) y Postgrado Artes UC por la invitación.
+* A [Lisa Jamhoury](http://lisajamhoury.com/) y [Shawn van Every](https://tisch.nyu.edu/about/directory/itp/1838206356) por Kinectron.
+* A [Lauren McCarthy](http://lauren-mccarthy.com/) y todo el equipo de p5.js.
+* A [Yuli Cai](http://www.caiyuli.com/) y [Donald Shorter Jr.](https://www.instagram.com/donxmen/) por todas las horas que hemos compartido usando y descubriendo las posibilidades de la Kinect para performance en vivo.
+* A [Mimi Yin](https://tisch.nyu.edu/about/directory/itp/717437654) por su clase Choreographic Interventions.
+* A [Kat Sullivan](http://katsully.com/), [Sergio Mora-Díaz](http://www.sergiomoradiaz.com/), [Elizabeth White](http://www.elizabethcarolinewhite.com/) y [Tiriree Kananuruk](http://xxx.tiri.xxx/) por mantener el Movement Collective de NYU ITP.

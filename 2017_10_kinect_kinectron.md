@@ -4,11 +4,11 @@
 
 Este taller fue dictado por [Aarón Montoya-Moraga](http://montoyamoraga.io/) en el Campus Oriente de la Universidad Católica de Chile, para el Postgrado de Artes UC, viernes 13 de octubre 2017, entre 10am y 1pm.
 
-[kinect_kinectron0](https://raw.githubusercontent.com/montoyamoraga/workshops/gh-pages/pictures/2017-10-13-postgrado_uc0.jpg "kinect_kinectron0")
+![kinect_kinectron0](https://raw.githubusercontent.com/montoyamoraga/workshops/gh-pages/pictures/2017-10-13-postgrado_uc0.jpg "kinect_kinectron0")
 
-[kinect_kinectron1](https://raw.githubusercontent.com/montoyamoraga/workshops/gh-pages/pictures/2017-10-13-postgrado_uc1.jpg "kinect_kinectron1")
+![kinect_kinectron1](https://raw.githubusercontent.com/montoyamoraga/workshops/gh-pages/pictures/2017-10-13-postgrado_uc1.jpg "kinect_kinectron1")
 
-[kinect_kinectron2](https://raw.githubusercontent.com/montoyamoraga/workshops/gh-pages/pictures/2017-10-13-postgrado_uc2.jpg "kinect_kinectron2")
+![kinect_kinectron2](https://raw.githubusercontent.com/montoyamoraga/workshops/gh-pages/pictures/2017-10-13-postgrado_uc2.jpg "kinect_kinectron2")
 
 
 ## Contenidos

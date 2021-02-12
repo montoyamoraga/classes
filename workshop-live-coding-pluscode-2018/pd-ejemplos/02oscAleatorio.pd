@@ -1,0 +1,48 @@
+#N canvas 141 45 1123 806 10;
+#X obj 228 323 osc~;
+#X obj 267 453 dac~;
+#X obj 269 417 *~;
+#X obj 318 194 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X floatatom 319 339 5 0 0 0 - - -, f 5;
+#X obj 318 360 / 127;
+#X floatatom 315 385 5 0 0 0 - - -, f 5;
+#X floatatom 228 296 5 0 0 0 - - -, f 5;
+#X msg 237 269 440;
+#X obj 141 322 osc~;
+#X floatatom 141 293 5 0 0 0 - - -, f 5;
+#X obj 141 245 random 1000;
+#X obj 139 221 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 221 244 random 1000;
+#X obj 139 194 metro 500;
+#X obj 139 173 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X floatatom 189 173 5 0 0 0 - - -, f 5;
+#X text 6 27 por aaron montoya-moraga;
+#X text 5 41 version en ingles: abril 2018;
+#X text 5 54 version en espanol: noviembre 2018;
+#X text 6 11 02oscAleatorio.pd;
+#X text 90 164 Toggle;
+#X text 68 179 salida 0/1;
+#X text 201 192 metronomo salida bang;
+#X text 107 220 Bang;
+#X text 36 245 salida aleatoria entre 0 y N-1;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
+#X connect 2 0 1 1;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 2 1;
+#X connect 7 0 0 0;
+#X connect 8 0 7 0;
+#X connect 9 0 2 0;
+#X connect 10 0 9 0;
+#X connect 11 0 10 0;
+#X connect 12 0 11 0;
+#X connect 12 0 13 0;
+#X connect 13 0 7 0;
+#X connect 14 0 12 0;
+#X connect 15 0 14 0;
+#X connect 16 0 14 1;

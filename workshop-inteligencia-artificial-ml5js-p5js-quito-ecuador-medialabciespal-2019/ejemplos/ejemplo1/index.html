@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="./libraries/ml5.min.js"></script>
+    <script src="./libraries/p5.min.js"></script>
+    <script src="./libraries/p5.dom.min.js"></script>
+    <script src="./libraries/p5.sound.min.js"></script>
+    <title>ejemplo1</title>
+    <style>
+    button {
+      margin: 2px;
+      padding: 4px;
+    }
+    video{
+      width: 300;
+      height: 300;
+    }
+    p{
+      display: inline;
+      font-size: 14px;
+    }
+    h6{
+      margin: 4px;
+      font-weight: lighter;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    </style>
+  </head>
+  <body>
+
+    <h3>Entrena una red neuronal para distinguir entre clase A y clase B</h3>
+    <div id="contenedorVideo"></div>
+    <h6><span id="estadoModelo">Cargando modelo base...</span> | <span id="estadoVideo">Cargando video...</span></h6>
+    <p>
+      <button id="botonA">Agregar imágenes A</button>
+    </p><p><span id="cantidadImagenesA">0</span> imágenes A</p>
+      <br><button id="botonB">Agregar imágenes B</button>
+      <p><span id="cantidadImagenesB">0</span> imágenes B</p>
+    <p></p>
+    <br>
+    <p><button id="entrenar">Entrenar</button><span id="perdida"></span></p>
+    <br>
+    <p>
+      <button id="botonCorrer">Correr el modelo!</button><br>
+      Tu modelo clasificó esto como: <span id="resultado">...</span>
+    </p>
+      <br>
+
+    <script src="./js/sketch.js"></script>
+
+  </body>
+</html>

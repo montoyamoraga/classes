@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>20170310, taller chuck</title>
+    <!-- import stylesheet for reveal.js library -->
+    <link rel="stylesheet" href="./libraries/revealjs/css/reveal.css">
+    <!-- import stylesheet for theme black of reveal.js library -->
+    <link rel="stylesheet" href="./libraries/revealjs/css/theme/black.css">
+</head>
+
+<body>
+
+    <div class="reveal">
+        <div class="slides">
+
+            <section>
+                <h1>introducción a la programación</h1>
+                <h2>y diseño de instrumentos digitales</h2>
+                <h3>domingo 12 de marzo 2017</h3>
+                <h4>por aarón montoya-moraga</h4>
+                <h5>version 0.0.1</h5>
+            </section>
+
+            <section>
+                <h1>contexto</h1>
+                <h2>¿quiénes somos?</h2>
+                <h2>¿por qué estamos acá?</h2>
+            </section>
+
+            <section>
+                <h1>sobre el instructor</h1>
+                <ul>
+                    <li>aarón montoya-moraga</li>
+                    <li><a href="http://montoyamoraga.io">montoyamoraga.io</a></li>
+                    <li>artista / programador</li>
+                    <li>estudiante en <a href="https://tisch.nyu.edu/itp">nyu itp</a></li>
+                    <li>processing, p5.js, max, pure data, chuck, arduino, ableton live, millumin, osc, midi, javascript, html, python, git ...</li>
+                </ul>
+            </section>
+
+
+            <section>
+                <h1>portafolio</h1>
+                <ul>
+                    <li><a href="https://vimeo.com/159317270">rube telephone</a>, con <a href="http://chino.kim/">chino kim</a>, instalación, max, node.js, speech-to-text</li>
+                    <li><a href="https://vimeo.com/168505358">puppet</a>, con <a href="http://caiyuli.com/">yuli cai</a> y <a href="https://www.facebook.com/Genderosity/">donald shorter jr </a>, kinect, processing, osc</li>
+                    <li><a href="https://www.youtube.com/watch?v=78teeavJbjw">6:34</a>, con <a href="http://caiyuli.com/">yuli cai</a> y <a href="https://www.facebook.com/Genderosity/">donald shorter jr </a>, three.js</li>
+                    <li><a href="https://vimeo.com/205716740">infinite folders</a></li>
+                    <li><a href="https://vimeo.com/195573383">requiem</a></li>
+                    <li><a href="http://anxietybrain.net/">anxiety brain</a>, con <a href="http://neveroddoreven.tv/">eve weinberg</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h1>contenidos del taller</h1>
+                <ul>
+                    <li>programación + arte</li>
+                    <li>música por computador</li>
+                    <li>programación en chucK</li>
+                    <li>fundamentos de programación</li>
+                    <li>variables, cálculos, funciones, bucles</li>
+                    <li>bucles y lógica</li>
+                    <li>osciladores, samples, panning</li>
+                    <li>respaldo de trabajos digitales con github</li>
+                    <li>muestra de instrumentos creados en la jornada</li>
+                </ul>
+            </section>
+
+            <section>
+                <h1>programación + arte</h1>
+                <ul>
+                    <li>installation: daniel rozin, dave and gabe</li>
+                    <li>multimedia: kyle mcdonald, r. luke dubois</li>
+                    <li>sound art: björk, tristan perich, plork, slork</li>
+                    <li>visual art: processing, casey reas, ben fry</li>
+                    <li>performance art: tehching hsieh, lauren mccarthy</li>
+                    <li>video art: nam june paik</li>
+                </ul>
+            </section>
+
+            <section>
+                <h1>programación + arte</h1>
+                <ul>
+                    <li>ars electronica</li>
+                    <li>bitforms gallery, pioneer works</li>
+                    <li>nyu itp, ucla dma, mit media lab</li>
+                    <li>rhizome</li>
+                </ul>
+            </section>
+
+            <section>
+                <h1>música por computador</h1>
+                <ul>
+                    <li>
+                        <li>new interfaces for musical expression</li>
+                        <li>miller puckette, max y pure data</li>
+                        <li>ableton live, reason, vst</li>
+                        <li>supercollider, csound</li>
+                        <li>chucK</li>
+                        <li>tone.js, sonic pi</li>
+                        <li>johnny greenwood, radiohead</li>
+                </ul>
+            </section>
+
+            <section>
+                <h1>programación en chucK</h1>
+                <ul>
+                    <li>¿por qué chucK?</li>
+                    <li>síntesis y manipulación en tiempo real</li>
+                    <li>síntesis y manipulación en tiempo real</li>
+                    <li>integración con mundo físico y digital</li>
+                    <li>plorK, slorK</li>
+                    <li>integración con MIDI y OSC</li>
+                    <li>instalación de chucK</li>
+                    <li>nuestro primer programa sonoro</li>
+                </ul>
+            </section>
+
+            <section>
+                <h1>primer programa: hola</h1>
+                <pre>
+                    <<< "hola!">>>;
+                </pre>
+            </section>
+
+            <section>
+                <h1>segundo programa: nota la</h1>
+                <pre>
+                    SinOsc s => dac;
+                    0.7 => s.gain;
+                    440 => s.freq  ;
+                    27 :: second => now;
+                </pre>
+
+            </section>
+            <section>
+                <h1>fundamentos de sonido y psicoacústica</h1>
+                <ul>
+                    <li>onda sinusoidal</li>
+                    <li>amplitud, frecuencia, fase</li>
+                    <li>teorema de Fourier</li>
+                    <li>20 Hz a 20,000 Hz</li>
+                    <li>en chucK: SinOsc</li>
+                </ul>
+            </section>
+            <section>
+                <h1>osciladores</h1>
+                <ul>
+                    <li>onda sinusoidal, SinOsc</li>
+                    <li>onda cuadrada, SqrOsc</li>
+                    <li>onda diente de sierra</li>
+                    <li>onda triangular</li>
+                </ul>
+            </section>
+            <section>
+                <h1>ganancia</h1>
+                <ul>
+                    <li>relación amplitud - ganancia </li>
+                    <li>onda cuadrada, SqrOsc</li>
+                    <li>onda diente de sierra</li>
+                    <li>onda triangular</li>
+                </ul>
+            </section>
+            <section>
+                <h1>tercer programa</h1>
+                <pre>
+                    //declarar oscilador sinusoidal
+                    //conectarlo al dac
+                    SinOsc s => dac;
+                    //definir la frecuencia del oscilador
+                    220 => s.freq;
+                    //definir la ganancia del oscilador
+                    1.0 => s.gain;
+                    //dejar que el tiempo transcurra
+                    0.3 :: second => now;
+                    //silenciar por 0.3 segundos
+                    0.0 => s.gain;
+                    0.3 :: second => now;
+                    //toquemos mas notas...
+                </pre>
+            </section>
+
+            <section>
+                <h1>programa avanzado</h1>
+                <pre>
+                    Impulse imp => ResonZ filt => NRev rev => dac;
+                    0.04 => rev.mix;
+                    100.0 => filtQ => filt.gain;
+                    while (1) {
+                      Std.mtof(Math.random2(60, 84)) =>
+                      filt.freq; 1.0 => imp.next;
+                      100 :: ms => now;
+                    }
+                </pre>
+            </section>
+
+
+            <section>
+                <h1>variables: int</h1>
+                <pre>
+                  int myPitch; 220 => myPitch;
+                  <<< myPitch>>>;
+                  myPitch + myPitch - 100 => int anotherPitch;
+                  2 * myPitch => int higherPitch;
+                  myPitch /2 => int lowerPitch;
+                </pre>
+            </section>
+
+            <section>
+                <h1>variables: float</h1>
+                <pre>
+                220 => float twinkle;
+                1.5 * twinkle => float twinkle2;
+                1.6818 * twinkle = float lit;
+                </pre>
+            </section>
+
+            <section>
+                <h1>variables: dur</h1>
+                <pre>
+                0.55 :: second => dur aLittleBit;
+                60 :: minute => dur oneHour;
+                5 :: hour => dur someHours;
+                0.5 :: week => dur halfWeek;
+                57 :: week => a year??
+                //no hay month ni year
+                </pre>
+            </section>
+
+            <section>
+                <h1>condiciones</h1>
+                <pre>
+                  Math.random2(0, 100) => int chance;
+                  if (chance < 50) {
+                    <<< "lower than 50">>>;
+                  }
+                  else {
+                    <<< "equal or higher than 50">>>;
+                  }
+                </pre>
+            </section>
+
+            <section>
+                <h1>lógica</h1>
+
+                <ul>
+                    <li>or</li>
+                    <li>and</li>
+                </ul>
+            </section>
+
+
+            <section>
+                <h1>bucles: for</h1>
+                <ul>
+                    <li></li>
+                </ul>
+            </section>
+
+            <section>
+                <h1>bucles: while</h1>
+                <ul>
+                    <li></li>
+                </ul>
+            </section>
+
+            <section>
+                <h1>respaldo de trabajos digitales con github</h1>
+                <ul>
+                    <li></li>
+                </ul>
+
+            </section>
+
+            <section>
+                <h1>bibliotecas de chucK:</h1>
+                <ul>
+                    <li>Std: mtof, ftoi, atoi, atof, itoa, ftoa</li>
+                    <li>Math: random, random2, randomf, random2f, round</li>
+                </ul>
+
+            </section>
+
+
+            <section>
+                <h1>panning</h1>
+                <ul>
+                    <li>dac</li>
+                    <li>dac.left</li>
+                    <li>dac.right</li>
+
+                    <li>dac.chan(0), ...., dac.chan(10), ...</li>
+                </ul>
+            </section>
+
+            <section>
+                <h1>arreglos</h1> //declaracion de arreglo de enteros int a[3]; //definir los valores 57 => a[0]; 60 => a[1]; 62 => a[2]; //declaracion de arreglo y asignacion de valores [40, 50, 67, 45] @=> int b[]; //acceso a los datos del arreglo
+                <<< a[2], b[1]>>>; for (0 => int i; i
+                    < a.cap(); i++) { <<< i, a[i]>>>; }
+
+            </section>
+
+            <section>
+                <h1>samples</h1>
+                <ul>
+                    <li>sample: archivo con sonido</li>
+                    <li>arreglo de números</li>
+                    <li>análogo: cassette, vinilo, cinta</li>
+                    <li>digital: cd, .mp3, .wav, .flac, .aac</li>
+                    <li>SndBuf</li>
+                </ul>
+            </section>
+
+            <section>
+                <h1>samples en chucK</h1> //declarar buffer de sonido SndBuf mySound => dac; //obtener direccion del directorio actual me.dir() => string path; //archivo de sonido "/audio/snare_01.wav" => string filename; //concatenar path y filename path + filename => filename;
+                //indicar a chucK que lea el archivo filename => mySound.read; //definir ganancia 0.5 => mySound.gain; //reproducir el sonido desde el principio 0 => mySound.pos; //transcurre un segundo de tiempo second => now;
+            </section>
+
+            <section>
+                <h1>reproducción de sample en bucle</h1> //Reproduce un sonido repetidamente en un bucle //por programador de ChucK, 12 de enero 2017 //Conecta un SndBuf a través de un objeto de paneo Pan2 al DAC SndBuf mysound => Pan2 pan => dac; //obtener la dirección del archivo y cargarlo
+                en la misma línea me.dir() + "audio/cowbell_01.wav" => mySound.read; //reproduce nuestro sonido una y otra vez en un bucle infinito while (true) { //ganancia, tasa (altura), y paneo aleatorios cada vez //(1) Ganancia aleatoria para el
+                archivo de sonido Math.random2f(0.1, 1.0) => mySound.gain; //(2) Posición de paneo aleatoria Math.random2f(-1.0, 1.0) => pan.pan; //(3) Tasa aleatoria (velocidad y altura) Math.random2(0.2, 1.8) => mySound.rate; //(re)comienza el sonido
+                configurando la posición a 0 //(4) Configura la posición a 0 para que empiece a sonar 0 => mySound.pos; //avanza el tiempo para poder escucharlo //(5) Espera un poco mientras toca 500.0 :: ms => no
+            </section>
+
+            <section>
+                <h1>archivos stereo</h1> SndBuf2 myStereoSound; me.dir() + "audio/stereo_fx_01.wav" => myStereoSound.read; Gain bal[2]; myStereoSound.chan[0] => bal[0] => dac.left; myStereoSound.chan[1] => bal[1] => dac.right; //repetir en bucle 1 => myStereoSound.loop; while(true)
+                { //tasa aleatoria de reproducción Math.random2f(0.2, 1.8) => myStereoSound.rate; //balance aleatorio (paneo) Math.random2f(-1.0, 1.0) => float balance; //convertir balance a ganancias izquierda y derecha (balance + 1) / 2.0 => float rightGain;
+                1.0 - rightGain => float leftGain; leftGain => bal[0].gain; rightGain => bal[1].gain; 0.3 :: second => now; }
+
+
+            </section>
+
+
+            <section>
+                <h1>funciones</h1> function int interval(int note1, int note2) { note1 - note2 => int result; return result; } fun int addOctave(int note) { int result; note + 12 => result; return result } fun int addOctaveShort(int note) { return note + 12; }
+            </section>
+
+            <section>
+                <h1>granularizacion</h1> SndBuf2 click => dac; me.dir() + "/audio/stereo_fx_01.wav" => click.read; function void granularize(SndBuf myWav, int steps){ //calcula el tamano del grano myWav.samples() / steps => int grain; //puntero en posicion aleatoria Math.random2(0,
+                myWav.samples() - grain) + grain => myWav.pos //dejar que el tiempo transcurra grain :: samp => now; } while(true) { //llama a la funcion, aqui transcurre el tiempo granularize(click, 70); }
+
+
+            </section>
+
+            <section>
+                <h1>recursion</h1> Mandolin mand => dac; fun int recurScale(int note, dur rate) { Std.mtof(note) => mand.freq; 1 => mand.noteOn; rate => now; if (note > 40) { recurScale(note - 1, 0.9 * rate); } } //toca un par de escalas recurScale(60, 0.5 :: second);
+                recurScale(67, 1.0 :: second);
+            </section>
+
+
+
+            <section>
+                <h1>jam session</h1>
+                <h2>(yeah)</h2>
+            </section>
+
+
+            <section>
+                <h1></h1>
+                <ul>
+                    <li></li>
+                </ul>
+            </section>
+
+
+            <section>
+                <h1>lista de enlaces</h1>
+                <h2>(muy incompleta)</h2>
+            </section>
+
+            <section>
+                <h1>educación</h1>
+                <ul>
+                    <li>cal arts</li>
+                    <li>cita uc</li>
+                    <li>coursera</li>
+                    <li>diseño udd</li>
+                    <li>edx</li>
+                    <li>kadenze</li>
+                    <li>mit media lab</li>
+                    <li>nyu itp</li>
+                    <li>hunter college</li>
+                    <li>parsons</li>
+                    <li>school for poetic computation</li>
+                    <li>stanford ccrma</li>
+                    <li>ucb cnmat</li>
+                    <li>ucla dma mfa</li>
+                    <li>ucsb mat</li>
+                    <li>ucsd computer music</li>
+                </ul>
+            </section>
+
+            <section>
+                <h1>galerías</h1>
+                <ul>
+                    <li>bitforms gallery</li>
+                    <li>dia:beacon</li>
+                    <li>pioneer works</li>
+                    <li>rhizome</li>
+                    <li></li>
+                </ul>
+            </section>
+
+            <section>
+                <h1>computer music</h1>
+                <ul>
+                    <li>chucK</li>
+                    <li>cycling 74 (max)</li>
+                    <li>ge wang</li>
+                    <li>miller puckette</li>
+                    <li>new interfaces for musical expression</li>
+                    <li>plork</li>
+                    <li>pure data</li>
+                    <li>sonic pi</li>
+                    <li>slork</li>
+                    <li>tone.js</li>
+                </ul>
+            </section>
+
+            <section>
+                <h1>programación creativa</h1>
+                <ul>
+                    <li>arduino</li>
+                    <li>processing foundation, processing, p5.js</li>
+                    <li>processing</li>
+                    <li>p5.js</li>
+                    <li>raspberry pi</li>
+                </ul>
+            </section>
+
+            <section>
+                <h1>artistas</h1>
+                <ul>
+                    <li>allison parrish</li>
+                    <li>ben fry</li>
+                    <li>chino kim</li>
+                    <li>corbin ordel</li>
+                    <li>daniel rozin</li>
+                    <li>dave and gabe</li>
+                    <li>dhruv</li>
+                    <li>eve weinberg</li>
+                    <li>gabe barcia-colombo</li>
+                    <li>justin peake</li>
+                    <li>kyle mcdonald</li>
+                    <li>lauren mccarthy</li>
+                    <li>matt romein</li>
+                    <li>sam lavigne</li>
+                    <li>spencer salazar</li>
+                    <li>tristan perich</li>
+                    <li>wipawe sirikolkarn</li>
+                    <li>yotam mann</li>
+                    <li>yuli cai</li>
+                </ul>
+            </section>
+
+            <section>
+                <h1>chile</h1>
+                <ul>
+                    <li>camila colussi</li>
+                    <li>carolina pino</li>
+                    <li>christian oyarzún</li>
+                    <li>delight lab</li>
+                    <li>josé miguel candela</li>
+                    <li>margarita gómez</li>
+                    <li>natalia cabrera</li>
+                    <li>nicolás peña-escarpentier</li>
+                    <li>patricio de la cuadra</li>
+                    <li>rodrigo cadiz</li>
+                    <li>sergio mora-díaz</li>
+                    <li>women who code</li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+    <script src="./libraries/revealjs/js/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            //do not show the progress bar
+            progress: false
+        });
+    </script>
+</body>
+
+</html>

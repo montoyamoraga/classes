@@ -1,0 +1,27 @@
+#N canvas 450 157 629 458 10;
+#X obj 171 303 osc~;
+#X obj 191 377 dac~;
+#X obj 193 341 *~;
+#X obj 244 125 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 9000 1;
+#X floatatom 243 263 5 0 0 0 - - -, f 5;
+#X obj 242 284 / 127;
+#X floatatom 239 309 5 0 0 0 - - -, f 5;
+#X floatatom 150 227 5 0 0 0 - - -, f 5;
+#X msg 83 182 330;
+#X msg 121 180 440;
+#X msg 152 179 880;
+#X text 6 11 00myFirstOsc.pd;
+#X text 6 27 by aaron montoya-moraga;
+#X text 7 43 april 2018;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
+#X connect 2 0 1 1;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 2 1;
+#X connect 7 0 0 0;
+#X connect 8 0 7 0;
+#X connect 9 0 7 0;
+#X connect 10 0 7 0;

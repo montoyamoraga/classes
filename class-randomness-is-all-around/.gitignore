@@ -1,0 +1,11 @@
+.DS_Store
+
+env/
+
+*.mkv
+
+*.webm
+
+*.mp4
+
+*.xml

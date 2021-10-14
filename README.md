@@ -1,1 +1,1 @@
-# workshops
+# classes

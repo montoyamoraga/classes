@@ -3,7 +3,7 @@
 ## Acerca de
 
 * Cursos remoto por video síncrono.
-* Curso de 4/5 clases de 3 horas, repartidas en 2/3 semanas
+* Curso de 3/4 clases de 3 horas, repartidas en 1/2 semanas
 * Entre 5 y 20 alumnos?
 
 ## Requerimientos
@@ -25,26 +25,44 @@ Curso diseñado y escrito para gente sin conocimientos previos de computación o
 
 ## Contenidos
 
-Introducción a la poesía generativa web para escritores con ml5.js y p5.js.
+Títulos posibles:
+
+* Poesía web con inteligencia artificial
+* Poesía electrónica web con machine learning
+* Escritura creativa con inteligencia artificial
+
+Subtítulos posibles:
+
+* Introducción a la programación de inteligencia artificial y web con ml5.js y p5.js
+* Creación de páginas web y textos con herramientas de inteligencia artificial
 
 Descripción:
 
-En este curso aprenderemos distintas técnicas para programar páginas web con texto generativo. Usaremos código para crear gramáticas y crearemos bases de datos para entrenar algoritmos de inteligencia artificial que aprendan a imitar nuestros datos originales.
+Cada participante aprenderá a escribir y controlar textos con inteligencia artificial. Crearemos bases de datos de textos y entrenaremos modelos y algoritmos, que serán capaces de aprender lenguajes, estilos y métricas. Con estos modelos podremos obtener texto creado por la computadora. También aprenderemos cómo hacer experiencas web que detecten nuestro cuerpo para manipular texto en la pantalla.
 
-Herramientas:
+El curso tiene el objetivo de explorar la creación colaborativa de texto entre humano y computador, las posibilidades plásticas de la inteligencia artificial para escribir y manipular texto, y aprender cómo funciona el texto en los computadores y la web.
 
-* [ml5.js](https://ml5js.org/): herramienta para crear proyectos web de aprendizaje de máquinas (machine learning).
-* [p5.js](https://p5js.org/): herramienta para crear proyectos web de programación creativa, incluyendo gráficas, sonido e interactividad.
+En este curso aprenderemos distintas técnicas para programar páginas web con elementos de inteligencia artificial.C crearemos bases de datos para entrenar algoritmos de inteligencia artificial que aprendan a imitar nuestros datos originales.
 
-Clases:
+## Programa
 
-* 1: Funcionamiento del texto en los computadores: ASCII / Unicode
-* 2: Redes neuronales recurrentes (char-RNN) para texto generativo
-* 3: Uso de char-RNN para texto generativo, integración con p5.js.
-* 4:
+Sesión 1: Introducción al texto en los computadores y la web
 
-Referencias:
+Aprenderemos cómo programar páginas web simples con p5.js, incluyendo técnicas interactivas con nuestro teclado y ratón para manipular texto, incluyendo su orden, tipografía y tamaño. Entrenaremos un algoritmo de inteligencia artificial con el Quijote, para crear texto generativo que emula al original.
 
-* [https://ml5js.org/](https://ml5js.org/)
-* [https://p5js.org/](https://p5js.org/)
+Sesión 2: Redes neuronales recurrentes (char-RNN) para texto generativo
+
+Aprenderemos a crear nuestras propias bases de datos, para poder entrenar el algoritmo char-RNN de inteligencia artificial con la herramienta ml5.js. Aprenderemos cómo crear una página web con texto generativo que imita a nuestra base de datos.
+
+
+Sesión 3: Reconocimiento de humanos
+
+Aprenderemos cómo usar inteligencia artificial en conjunto con la cámara de nuestro computador para detectar nuestro cuerpo y con esto manipular texto en la web con nuestra postura y presencia.
+
+## Referencias
+
+* [https://ml5js.org/](https://ml5js.org/): herramienta para crear proyectos web de aprendizaje de máquinas (machine learning).
+* [https://p5js.org/](https://p5js.org/): herramienta para crear proyectos web de programación creativa, incluyendo gráficas, sonido e interactividad.
 * [https://github.com/ml5js/training-charRNN](https://github.com/ml5js/training-charRNN)
+* [https://medium.com/processing-foundation/from-simple-to-advanced-ml5-js-70d6730b360b](https://medium.com/processing-foundation/from-simple-to-advanced-ml5-js-70d6730b360b)
+* [https://ml5-fellowship-2020.github.io/examples/](https://ml5-fellowship-2020.github.io/examples/)

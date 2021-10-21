@@ -6,17 +6,16 @@ let oneFrame = null;
 let oneFrameLength = 300;
 let oneFrameTemperature = 0.9;
 
-let currentDecimas = null;
-let currentDecimasPlaceHolder = "loading...";
+let currentText = null;
+let currentTextPlaceHolder = "loading...";
 
 let rnn;
 let generating = false;
 let temperature = 0.9;
 
-let decimasLines = 10;
+let maxLines = 10;
 let currentLine = 0;
 let justDidNewLine = false;
-
 
 const allChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -35,7 +34,7 @@ function setup() {
 
   lastPartUrl = url.substring(url.length - oneFrameStartIndex, url.length);
  
-  currentDecimas = allChars[int(random(allChars.length))];
+  currentText = allChars[int(random(allChars.length))];
 
 }
 
@@ -50,10 +49,10 @@ function draw() {
   textAlign(CENTER);
   fill(0);
   noStroke();
-  if (currentDecimas.length > 1) {
-    text(currentDecimas, 50*windowWidth/100, 25*windowHeight/100);
+  if (currentText.length > 1) {
+    text(currentText, 50*windowWidth/100, 25*windowHeight/100);
   } else {
-    text(currentDecimasPlaceHolder, 40*windowWidth/100, 25*windowHeight/100);
+    text(currentTextPlaceHolder, 40*windowWidth/100, 25*windowHeight/100);
   }
   pop();
 
@@ -63,24 +62,24 @@ function detectOneFrame() {
   if (lastPartUrl == oneFrameText) {
     oneFrame = true;
     // if oneFrame
-    rnn.generate({ seed: currentDecimas,
+    rnn.generate({ seed: currentText,
     length: oneFrameLength,
     temperature: oneFrameTemperature
     }, (err, results) => {
       for (let i = 0; i < results.sample.length; i++) {
         if (results.sample[i] == "\n" || results.sample[i] == "\r") {
           if (!justDidNewLine) {
-            currentDecimas = currentDecimas + "\n";
+            currentText = currentText + "\n";
             justDidNewLine = true;
             currentLine = currentLine + 1;
           }
         }
         else {
-          currentDecimas = currentDecimas + results.sample[i];
+          currentText = currentText + results.sample[i];
           justDidNewLine = false;
         }
 
-        if (currentLine > decimasLines - 1) {
+        if (currentLine > maxLines - 1) {
           break;
         }
       }
@@ -114,26 +113,23 @@ async function predict() {
     if (!justDidNewLine) {
 
       // create array of all lines
-      let allLines = currentDecimas.split("\n");
+      let allLines = currentText.split("\n");
       // retrieve last line
-      // let lastLine = allLines[allLines.length - 1];
       let lastLine = allLines[currentLine];
-      // say the last line
-      // p5Speech.speak(lastLine);
 
-      currentDecimas = currentDecimas + "\n";
+      currentText = currentText + "\n";
       justDidNewLine = true;
       currentLine = currentLine + 1
     
     }
   } else {
-    currentDecimas = currentDecimas + next.sample;
+    currentText = currentText + next.sample;
     justDidNewLine = false;
     
   }
 
-  if (currentLine > decimasLines - 1) {
-    currentDecimas = currentDecimas + "\n";
+  if (currentLine > maxLines - 1) {
+    currentText = currentText + "\n";
     justDidNewLine = false;
     currentLine = 0;
     generating = false;
@@ -145,7 +141,7 @@ function windowResized() {
 }
 
 function mouseClicked() {
-  currentDecimas = allChars[int(random(allChars.length))];
+  currentText = allChars[int(random(allChars.length))];
   currentLine = 0;
   detectOneFrame();
   generating = true;

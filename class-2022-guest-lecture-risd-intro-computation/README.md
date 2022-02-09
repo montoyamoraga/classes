@@ -11,14 +11,20 @@
 * [http://wiring.org.co/](http://wiring.org.co/)
 * [https://arduinohistory.github.io/](https://arduinohistory.github.io/)
 * [https://makeymakey.com/](https://makeymakey.com/)
+* [https://www.pjrc.com/](https://www.pjrc.com/)
 * [https://www.raspberrypi.org/](https://www.raspberrypi.org/)
 * [https://beagleboard.org/](https://beagleboard.org)
 
 ## Some projects
 
+* [https://winterbloom.com/shop/big-honking-button](https://winterbloom.com/shop/big-honking-button)
+* [https://bastl-instruments.com/instruments/microgranny](https://bastl-instruments.com/instruments/microgranny)
+* [https://bastl-instruments.com/instruments/kastle-drum](https://bastl-instruments.com/instruments/kastle-drum)
 * [https://cwandt.com/products/time-since-launch](https://cwandt.com/products/time-since-launch)
 * [https://lav.io/projects/yelp-prison-review-faxbot/](https://lav.io/projects/yelp-prison-review-faxbot/)
-* []
+* [http://error404.cl/drumCircleLA/](http://error404.cl/drumCircleLA/)
+* [https://www.gauravpatekar.in/feeling-climate-crisis](https://www.gauravpatekar.in/feeling-climate-crisis)
+* [https://shbobo.net/](https://shbobo.net/)
 
 ## Machine learning, sometimes with microcontrollers
 

@@ -1,3 +1,10 @@
+// risd_0_hello.ino
+// open serial port and print a hello message
+// programmed on wednesday february 09 2022
+// by aaron montoya-moraga
+
+
+
 // setup() runs once, at the beginning
 void setup() {
 

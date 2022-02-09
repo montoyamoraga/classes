@@ -29,4 +29,5 @@
 ## Arduino examples
 
 * [risd_0_hello](./risd_0_hello/): the Arduino microcontroller prints on the Arduino IDE's console on your machine.
-* [risd_1_dice](./risd_1_dice/): the Arduino microcontroller prints on the Arduino IDE's a random number from electromagnetic noise, and then prints the result of throwing some digital dice.
+* [risd_1_dice](./risd_1_dice/): the Arduino microcontroller prints on the Arduino IDE's console a random number from electromagnetic noise, and then prints the result of throwing some digital dice.
+* [risd_2_dice](./risd_2_clock/): the Arduino microcontroller prints on the Arduino IDE's console a digital clock.

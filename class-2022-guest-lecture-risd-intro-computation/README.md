@@ -5,25 +5,26 @@
 * [https://montoyamoraga.io/](https://montoyamoraga.io/)
 * [https://github.com/montoyamoraga/](https://github.com/montoyamoraga/)
 
-## Open source microcontrollers
+## Microcontrollers and other small computers
 
-* [Arduino Uno](https://en.wikipedia.org/wiki/Arduino_Uno)
-* [Wiring](http://wiring.org.co/)
-* [The Untold History of Arduino](https://arduinohistory.github.io/)
-
-## Small computers
-
+* [https://en.wikipedia.org/wiki/Arduino_Uno](https://en.wikipedia.org/wiki/Arduino_Uno)
+* [http://wiring.org.co/](http://wiring.org.co/)
+* [https://arduinohistory.github.io/](https://arduinohistory.github.io/)
+* [https://makeymakey.com/](https://makeymakey.com/)
 * [https://www.raspberrypi.org/](https://www.raspberrypi.org/)
 * [https://beagleboard.org/](https://beagleboard.org)
 
-## Cool projects
+## Some projects
 
 * [https://cwandt.com/products/time-since-launch](https://cwandt.com/products/time-since-launch)
+* [https://lav.io/projects/yelp-prison-review-faxbot/](https://lav.io/projects/yelp-prison-review-faxbot/)
+* []
 
-## Machine learning + microcontrollers
+## Machine learning, sometimes with microcontrollers
 
 * [https://www.edx.org/professional-certificate/harvardx-tiny-machine-learning](https://www.edx.org/professional-certificate/harvardx-tiny-machine-learning)
 * [https://www.coral.ai/](https://www.coral.ai/)
+* [https://runwayml.com/](https://runwayml.com/)
 
 ## Arduino examples
 

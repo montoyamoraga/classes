@@ -1,10 +1,9 @@
-// risd_0_hello.ino
+// risd_1_dice.ino
 // simulator of throwing dice
 // use real world noise as random seed
 // connect one end of a cable to A0, other end is loose
 // programmed on wednesday february 09 2022
 // by aaron montoya-moraga
-
 
 // number of dices to be thrown
 int howManyDices = 2;

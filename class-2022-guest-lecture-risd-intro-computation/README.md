@@ -4,6 +4,8 @@
 
 * [https://montoyamoraga.io/](https://montoyamoraga.io/)
 * [https://github.com/montoyamoraga/](https://github.com/montoyamoraga/)
+* [https://github.com/montoyamoraga/tiny-trainable-instruments](https://github.com/montoyamoraga/tiny-trainable-instruments)
+* [https://vimeo.com/216762164](https://vimeo.com/216762164)
 
 ## Microcontrollers and other small computers
 
@@ -17,6 +19,9 @@
 
 ## Some projects
 
+* [https://github.com/nicolehe/grow_slow](https://github.com/nicolehe/grow_slow)
+* [http://sites.bxmc.poly.edu/~lukedubois/projects/index.html?id=gun](http://sites.bxmc.poly.edu/~lukedubois/projects/index.html?id=gun)
+* [https://github.com/montoyamoraga/SiguesAhi](https://github.com/montoyamoraga/SiguesAhi)
 * [https://winterbloom.com/shop/big-honking-button](https://winterbloom.com/shop/big-honking-button)
 * [https://bastl-instruments.com/instruments/microgranny](https://bastl-instruments.com/instruments/microgranny)
 * [https://bastl-instruments.com/instruments/kastle-drum](https://bastl-instruments.com/instruments/kastle-drum)
@@ -25,10 +30,16 @@
 * [http://error404.cl/drumCircleLA/](http://error404.cl/drumCircleLA/)
 * [https://www.gauravpatekar.in/feeling-climate-crisis](https://www.gauravpatekar.in/feeling-climate-crisis)
 * [https://shbobo.net/](https://shbobo.net/)
+* [https://monome.org/](https://monome.org/)
+* [https://100r.co/site/uxn.html](https://100r.co/site/uxn.html)
+* [https://compudanzas.itch.io/introduccion-a-programacion-uxn](https://compudanzas.itch.io/introduccion-a-programacion-uxn)
+* [https://wiki.xxiivv.com/site/collapse_computing.html](https://wiki.xxiivv.com/site/collapse_computing.html)
 
-## Machine learning, sometimes with microcontrollers
+## Machine learning stuff
 
+* [https://www.tensorflow.org/lite/microcontrollers](https://www.tensorflow.org/lite/microcontrollers)
 * [https://www.edx.org/professional-certificate/harvardx-tiny-machine-learning](https://www.edx.org/professional-certificate/harvardx-tiny-machine-learning)
+* [https://docs.arduino.cc/hardware/nano-33-ble-sense](https://docs.arduino.cc/hardware/nano-33-ble-sense)
 * [https://www.coral.ai/](https://www.coral.ai/)
 * [https://runwayml.com/](https://runwayml.com/)
 

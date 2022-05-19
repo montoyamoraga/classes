@@ -16,5 +16,10 @@ curso: investigación medial expandida
 
 ## charla sobre inteligencia artificial en la creación medial
 
+## presentación personal
+
+https://montoyamoraga.io/
+
+https://github.com/montoyamoraga/
 
 

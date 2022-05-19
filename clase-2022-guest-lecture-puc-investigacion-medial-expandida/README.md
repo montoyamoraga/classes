@@ -32,7 +32,7 @@ arpillera mirror (2019) https://montoyamoraga.io/arpillera-mirror/
 
 ultravioleta (2019) https://montoyamoraga.io/ultravioleta/ con Nicole L'Huillier https://nicolelhuillier.com/
 
-tiny trainable instruments https://github.com/montoyamoraga/tiny-trainable-instruments
+tiny trainable instruments (2021) https://github.com/montoyamoraga/tiny-trainable-instruments
 
 no (en progreso) 2022
 
@@ -47,6 +47,8 @@ colaboratory https://colab.research.google.com/
 coral https://www.coral.ai/
 
 design justice https://design-justice.pubpub.org/z by sasha costanza-chock 
+
+guardian project https://guardianproject.info/
 
 making pictures with generative adversarial networks https://www.anteism.com/shop/making-pictures-with-generative-adversarial-networks-casey-reas
 
@@ -91,6 +93,8 @@ joy buolamwini https://www.ajl.org/
 klye mcdonald https://kylemcdonald.net/ bird sounds (2016) https://experiments.withgoogle.com/ai/bird-sounds/view/
 
 lauren lee mccarthy https://lauren-mccarthy.com/ 24h host https://lauren-mccarthy.com/24h-HOST
+
+maya man https://mayaontheinter.net/ posenet sketchbook https://mayaontheinter.net/index/projects/posenet-sketchbook
 
 nushin yazdani https://nushinyazdani.com/ feminist AI technics toollkit https://nushinyazdani.com/Feminist-AI-Ethics-Toolkit
 

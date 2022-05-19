@@ -60,6 +60,8 @@ machine learning for musicians and artists https://www.kadenze.com/courses/machi
 
 pytorch https://pytorch.org/
 
+queer AI https://queer.ai/
+
 runway https://runwayml.com/
 
 teachable machine https://teachablemachine.withgoogle.com/

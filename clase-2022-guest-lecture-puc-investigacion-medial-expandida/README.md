@@ -105,3 +105,5 @@ roy macdonald https://roymacdonald.github.io/ how NOT to train your GAN (2018) h
 sam lavigne https://lav.io/ training poses (2018) https://lav.io/projects/training-poses/
 
 sofia crespo https://sofiacrespo.com/ neural zoo https://neuralzoo.com/
+
+yining shi https://1023.io/ fast style transfer https://1023.io/fast-style-transfer

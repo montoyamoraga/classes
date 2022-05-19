@@ -48,7 +48,7 @@ coral https://www.coral.ai/
 
 design justice https://design-justice.pubpub.org/z by sasha costanza-chock 
 
-guardian project https://guardianproject.info/
+guardian project https://guardianproject.info/ haven https://guardianproject.info/apps/org.havenapp.main/
 
 making pictures with generative adversarial networks https://www.anteism.com/shop/making-pictures-with-generative-adversarial-networks-casey-reas
 
@@ -70,7 +70,7 @@ tensorflow lite for microcontrollers https://www.tensorflow.org/lite/microcontro
 
 ## gente
 
-allison parrish https://www.decontextualize.com/
+allison parrish https://www.decontextualize.com/ compsasses (2019) https://sync.abue.io/issues/190705ap_sync2_27_compasses.pdf
 
 alejandro matamala https://www.matamala.info/
 

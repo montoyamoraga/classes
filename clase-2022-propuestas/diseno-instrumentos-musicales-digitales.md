@@ -1,78 +1,106 @@
 # Diseño de instrumentos musicales digitales
 
-Una propuesta por Aarón Montoya-Moraga para la Escuela de Diseño y la Facultad de Arquitectura y Urbanismo de la Universidad de Chile.
-
-## Requerimientos
-
-* Computador con sistema operativo Linux, Mac o Windows, (no tablets).
-* Conexión a internet
-* Navegadores web Chrome y Firefox.
+Esta documento por Aarón Montoya Moraga es una propuesta de curso de electivo de especialización para Diseño en la Facultad de Arquitectura y Urbanismo de la Universidad de Chile, para el llamado de Docencia Abierta Primavera 2022, publicada en el sitio web http://www.fau.uchile.cl/noticias/186978/docencia-abierta-primavera-2022
 
 ## Conocimientos previos
 
-Curso diseñado y escrito para gente sin conocimientos previos de computación o de artes o de inglés
+Curso diseñado y escrito para estudiantes sin conocimientos previos de computación o de música o de inglés.
 
-## Herramientas de software
+## Requerimientos
 
+Para la realización de este curso los estudiantes usarán los computadores de los laboratorios de la Universidad de Chile con:
+
+* Computador con sistema operativo Linux, Mac o Windows, (no tablets).
+* Conexión a internet.
+
+Adicionalmente, usaremos los software gratuitos:
+
+* Navegadores web Chrome y Firefox.
 * Arduino: hardware y software para programar microcontroladores.
 * Pure Data: entorno de programación gráfico para arte sonoro.
+* Git y Github: entorno de desarrollo y publicación de software.
 * Teensy: microcontroladores usados para creación de instrumentos musicales digitales.
+
+Los estudiantes deberán adquirir y traer a clases los siguientes hardware:
+
+* Kit de microcontrolador Teensy para audio https://www.pjrc.com/store/audio_tutorial_kit.html (60.00 USD)
+* Cable micro USB
+* Audífonos o parlantes con entrada auxiliar
 
 ## Contenidos
 
 Descripción:
 
-Las y los estudiantes aprenderán los fundamentos de la programación de instrumentos musicales digitales.
+Las y los estudiantes aprenderán los fundamentos de programación y sonido necesarios para construir instrumentos musicales digitales.
 
-En la primera mitad del curso usaremos el software de fuente abierta para música por computador llamado Pure Data, para aprender a programar los componentes básicos de sonido digital, incluyendo osciladores, filtros, mezcladores y efectos.
+En la primera mitad del curso usaremos el software gratuito y de fuente abierta para música por computador llamado Pure Data, para aprender a programar los componentes básicos de sonido digital, incluyendo osciladores, filtros, mezcladores y efectos. Esta plataforma es usada a nivel profesional y usa el paradigma de programación visual, donde se usan bloques y cables de conexión entre ellos para escribir software.
 
-En la segunda mitad del curso usaremos el microcontrolador Teensy, una variante de Arduino, para aprender a crear instrumentos digitales, incluyendo sintetizadores monofónicos, samplers y efectos de audio. 
+En la segunda mitad del curso programaremos en el lenguaje C usando el microcontrolador Teensy, una variante del microcontrolador Arduino, con un fuerte enfoque en sonido y controladores musicales. Construiremos sintetizadores monofónicos, samplers y efectos de audio. Las y los estudiantes aprenderán los fundamentos de electrónica necesarios para crear las interfaces físicas para controlar los instrumentos, incluyendo perillas, botones y luces.
 
 ## Programa
 
-### Semanas 01 y 02: Introducción al texto en los computadores y la web
+### Semanas 01 y 02: Introducción al sonido con software Pure Data
 
-Aprenderemos fundamentos programar páginas web simples con HTML, CSS, y JS, con énfasis en la biblioteca p5.js, incluyendo técnicas interactivas con nuestro teclado y ratón para manipular texto, incluyendo su orden, tipografía y tamaño.
+Aprenderemos los fundamentos de programación visual usando Pure Data, para entender cómo funciona la percepción humana de sonido los osciladores digitales de distintas formas de onda. También aprenderemos las parametrizaciones comunes utilizadas, incluyendo frecuencia base y amplitud, los que controlaremos con ratón y teclado.
 
-Entrenaremos un algoritmo de inteligencia artificial para que sea capaz de imitar al libro El Quijote, y así crear texto generativo que emula al original.
+Escribiremos software para crear instrumentos musicales digitales simples basados en osciladores y los usaremos en clase.
 
-### Semanas 03 y 04 : Redes neuronales recurrentes (char-RNN) para texto generativo
+### Semanas 03 y 04 : Ondas envolventes y secuenciadores
 
-Aprenderemos a crear nuestras propias bases de datos de texto, para poder entrenar un algoritmo char-RNN de inteligencia artificial con la herramienta ml5.js, y crearemos nuestra propia página web con texto generativo que imita a nuestra base de datos.
+Aprenderemos a crear ondas envolventes unipolares para controlar la amplitud de nuestros osciladores, incluyendo envolventes ADSR para instrumentos tonales y de AR para instrumentos percusivos. También aprenderemos variables de estado y parametrización para crear secuenciadores que son capaces de controlar y repetir rítmicamente nuestros instrumentos.
 
-### Semanas 05 y 06: Color y transferencia de estilo
+Escribiremos software para crear instrumentos musicales digitales con control y expresividad duración en el tiempo. También escribiremos software para crear secuenciadores que permiten almacenar información para crear secuencias musicales y patrones repetitivos.
 
-Aprenderemos cómo los computadores almacenan e interpretan colores, y aplicaremos lo aprendido en texto generativo, para crear colores generativos.
+### Semanas 05 y 06 : Filtros, grabación y sampleo
 
-Entrenaremos un algoritmo de inteligencia artificial para hacer que es capaz de aprender información gráfica sobre una imagen, y transferir ese estilo en otras imágenes estáticas o con nuestra webcam.
+Aprenderemos los fundamentos de filtros de frecuencia para sonido, incluyendo pasabajos, pasaaltos, pasabanda y rechazabanda, y su parametrización en frecuencias de corte y resonancia.
 
-### Semanas 07 y 08: Reconocimiento y creación de sonido
+Escribiremos software que permita filtrar en frecuencia nuestros sonidos hechos con osciladores o a partir de material grabado. Los parámetros de filtrado serán controlados de forma interactiva con ratón y teclado, y con secuenciadores digitales. 
 
-Aprenderemos fundamentos de cómo funciona el sonido en nuestro computador y cómo los humanos lo percibimos. Con esto estudiaremos los rudimentos de reconocimiento de sonido con inteligencia artificial, para crear páginas web interactivas que responden a nuestro micrófono.
+### Semanas 07 y 08 : Introducción al sonido con hardware Teensy
 
-### Semanas 09 y 10: Ética y privacidad
+Aprenderemos los fundamentos de programación en C usando el microcontrolador Teensy, una variante de Arduino. También los fundamentos de electrónica para montar nuestro microntrolador Teensy en una protoboard para crear nuestro primer instrumento hardware independiente del computador.
 
-Abordaremos problemáticas de ética y privacidad en inteligencia artificial, y revisaremos casos de vigilancia de ciudadanos a nivel de estado y de empresas. Aprenderemos sobre activistas, organizaciones y académicas a lo largo del mundo que están trabajando por nuestros derechos digitales.
+### Semanas 09 y 10 : Perillas y botones para instrumentos
 
-### Semanas 11 y 12: Reconocimiento de humanos
+Aprenderemos los fundamentos de electricidad para conectar perillas y botones al microcontrolador, basado en la interactividad que ya hemos aprendido con teclado y ratón del computador.
 
-Aprenderemos cómo usar inteligencia artificial en conjunto con la cámara de nuestro computador para detectar nuestro cuerpo y con esto manipular multimedia en nuestro computador.
+Usaremos las perillas y botones para controlar diversos parámetros musicales, incluyendo notas musicales, frecuencia de sonido, volumen, frecuencia de corte de filtrado y tempo.
 
-### Semanas 13 y 14: Profundización en herramientas computacionales
+### Semanas 11 y 12 : Grabación y sampleo
 
-Profundizaremos en distintos aspectos de computación útiles para diseñadoras y artistas, incluyendo captura de datos, bases de datos, herramientas en la nube y en computadoras personales para el desarrollo de algoritmos de inteligencia artificial, con un énfasis en herramientas que protegen nuestra privacidad y de bajo costo.
+Aprenderemos cómo conectar un micrófono a nuestro microcontrolador Teensy para grabar sonido, y programar diversas rutinas con botones y perillas para controlar parámetros de grabación como ganancia de entrada, inicio, pausa y finalización de la grabación. Aprenderemos diversas técnicas de sampleo para manipular creativamente los sonidos grabados, incluyendo frecuencia y dirección de reproducción.
 
-### Semanas 15 y 16: Proyecto final
+Construiremos con nuestro microcontrolador Teensy un instrumento capaz de grabar, reproducir y manipular audio.
 
-Desarrollo de proyectos finales, trabajo supervisado, horarios de atención de ayuda y evaluaciones finales.
+### Semanas 13 y 14 : Proyecto final y diseño de instrumentos musicales digitales
+
+Aprenderemos a documentar y diseñar instrumentos musicales digitales, incluyendo elementos como su lista de materiales, escritura y publicación del código, instalación de software, eléctrica y mecánica, diseño de interaccion instrumento-humano.
+
+Los estudiantes trabajarán en sus propios proyectos finales, en grupos de 2 o 3,
+y documentarán su proceso.
+
+### Semanas 15 y de actividades especiales: Cierre de semestre y futuro
+
+Aprenderemos sobre recursos para seguir aprendiendo después de este curso sobre la programación y construcción de instrumentos musicales digitales
+
+Realizaremos el ierre del semestre y acta de notas y actividades de retroalimentación.
+
+## Evaluaciones
+
+Las nota final del curso será un promedio simple de las siguientes notas:
+
+* Asistencia y participación
+* Tareas individuales
+* Proyecto grupales de mitad y fin de semestre
 
 ## Referencias y créditos
 
-* Curso basado en el original Programming Design Systems de Rune Madsen, disponible en https://www.runemadsen.com/syllabi/programming-design-systems/
-* 
-
-* [https://www.sinestesia.cc/post/escritura-creativa-con-inteligencia-artificial](https://www.sinestesia.cc/post/escritura-creativa-con-inteligencia-artificial)
-* [https://github.com/ml5js/training-charRNN](https://github.com/ml5js/training-charRNN)
-* [https://medium.com/processing-foundation/from-simple-to-advanced-ml5-js-70d6730b360b](https://medium.com/processing-foundation/from-simple-to-advanced-ml5-js-70d6730b360b)
-* [https://ml5-fellowship-2020.github.io/examples/](https://ml5-fellowship-2020.github.io/examples/)
-* [https://www.anteism.com/shop/making-pictures-with-generative-adversarial-networks-casey-reas](https://www.anteism.com/shop/making-pictures-with-generative-adversarial-networks-casey-reas)
+* La primera mitad del curso está basada en el software Pure Data https://puredata.info/ creado por Miller Puckette http://msp.ucsd.edu/, incluyendo las siguientes referencias:
+  * Curso Music 171, Computer Music 1 http://msp.ucsd.edu/syllabi/171.20w/index.htm
+  * Libro gratuito loadbang, Programming Electronic Music in Pure Data, por Johannes Kreidler https://www.wolke-verlag.de/musikbuecher/johannes-kreidler-loadbang/
+  * Libro The Computer Music Tutorial por Curtis Roads https://mitpress.mit.edu/books/computer-music-tutorial
+  * Manual gratuito https://en.flossmanuals.net/pd-extended/_full/
+* La segunda mitad del software está basada en el microcontrolador Teensy desarrollado por PJRC https://www.pjrc.com/, incluyendo las siguientes referencias:
+  * Tutorial Teensy Audio Library, https://www.pjrc.com/teensy/td_libs_Audio.html
+  * Libro Arduino for Musicians: A Complete Guide to Arduino and Teensy Microcontrollers https://global.oup.com/academic/product/arduino-for-musicians-9780199309320

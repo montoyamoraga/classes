@@ -1,74 +1,77 @@
 # Programación de sistemas de diseño gráfico
 
-Una propuesta por Aarón Montoya-Moraga para la Escuela de Diseño y la Facultad de Arquitectura y Urbanismo de la Universidad de Chile.
-
-## Requerimientos
-
-* Computador con sistema operativo Linux, Mac o Windows, (no tablets).
-* Conexión a internet
-* Navegadores web Chrome y Firefox.
+Esta documento por Aarón Montoya Moraga es una propuesta de curso de electivo de especialización para Diseño en la Facultad de Arquitectura y Urbanismo de la Universidad de Chile, para el llamado de Docencia Abierta Primavera 2022, publicada en el sitio web http://www.fau.uchile.cl/noticias/186978/docencia-abierta-primavera-2022
 
 ## Conocimientos previos
 
-Curso diseñado y escrito para gente sin conocimientos previos de computación o de artes o de inglés
+Curso diseñado y escrito para estudiantes sin conocimientos previos de computación o de inglés.
 
-## Herramientas de software
+## Requerimientos
 
-* [https://p5js.org/](https://p5js.org/): biblioteca de JavaScript para confeccionar páginas web con gráfica y multimedia, con opciones interactivas y dinámicas.
+Para la realización de este curso los estudiantes usarán los computadores de los laboratorios de la Universidad de Chile con:
+
+* Computador con sistema operativo Linux, Mac o Windows, (no tablets).
+* Conexión a internet.
+
+Adicionalmente, usaremos los software gratuitos:
+
+* Navegadores web Chrome y Firefox.
+* Arduino: hardware y software para programar microcontroladores.
+* Git y Github: entorno de desarrollo y publicación de software.
+* p5.js: entorno de programación para crear páginas web interactivas.
+
+Este curso no necesita la compra de hardware ni materiales adicionales para la realización del curso.
 
 ## Contenidos
 
 Descripción:
 
-Las y los estudiantes aprenderán los fundamentos de páginas web, incluyendo rudimentos de HTML, CSS y JavaScript, para la creación de páginas web estáticas y dinámicas. En paralelo, aprenderán técnicas para crear diseños de forma sistemática, generativa y parametrizada, incluyendo diseño gráfico, de tipografía y de composición.
+Las y los estudiantes aprenderán en este curso los fundamentos de páginas web, incluyendo rudimentos de HTML, CSS y JavaScript, para la creación de páginas web estáticas y dinámicas. Con esta base y en paralelo, aprenderán técnicas para crear diseños gráficos de forma sistemática, iterativa, generativa y parametrizada, incluyendo figuras geométricas, tipografía, composición y color. 
 
-El curso tiene el objetivo de explorar la creación colaborativa de multimedia entre humano y computador, las posibilidades plásticas de los sistemas de programación para iterar y parametrizar contenidos, y aprender distintas técnicas para crear sistemas de diseño de forma programática.
+El curso tiene el objetivo de explorar la creación colaborativa de multimedia entre humano y computador, las posibilidades plásticas de los sistemas de programación para iterar y parametrizar contenidos, y aprender distintas técnicas para crear sistemas de diseño de forma programática y colaborativa.
 
 ## Programa
 
-### Semanas 01 y 02: Introducción al texto en los computadores y la web
+### Semanas 01 y 02: Introducción a la programación web con p5.js
 
 Aprenderemos fundamentos programar páginas web simples con HTML, CSS, y JS, con énfasis en la biblioteca p5.js, incluyendo técnicas interactivas con nuestro teclado y ratón para manipular texto, incluyendo su orden, tipografía y tamaño.
 
-Entrenaremos un algoritmo de inteligencia artificial para que sea capaz de imitar al libro El Quijote, y así crear texto generativo que emula al original.
+### Semanas 03 y 04: Sistemas de figuras geométricas 
 
-### Semanas 03 y 04 : Redes neuronales recurrentes (char-RNN) para texto generativo
+Aprenderemos a programar figuras geométricas básicas, incluyendo rectángulos, triángulos y elipses, de forma paramétrica e interactiva. Aprenderemos también a crear algorítmicamente polígonos y otras figuras complejas.
 
-Aprenderemos a crear nuestras propias bases de datos de texto, para poder entrenar un algoritmo char-RNN de inteligencia artificial con la herramienta ml5.js, y crearemos nuestra propia página web con texto generativo que imita a nuestra base de datos.
+### Semanas 05 y 06: Sistemas de colores
 
-### Semanas 05 y 06: Color y transferencia de estilo
+Aprenderemos la tecnología detrás de cómo los computadores representan los colores, incluyendo sistemas RGB y HSB. Con esto, aprenderemos a crear y manipular colores de forma programática, iterativa y sistemática, para componer páginas web con distintos sistemas de colores en su fondo, texto y gráficas.
 
-Aprenderemos cómo los computadores almacenan e interpretan colores, y aplicaremos lo aprendido en texto generativo, para crear colores generativos.
+### Semanas 07 y 08: Sistemas de tipografía
 
-Entrenaremos un algoritmo de inteligencia artificial para hacer que es capaz de aprender información gráfica sobre una imagen, y transferir ese estilo en otras imágenes estáticas o con nuestra webcam.
+Aprenderemos la tecnología detrás de cómo los computadores almacenan y procesan texto y tipografía. Con esto, aprenderemos a crear páginas web donde la composición espacial y tipográfica es controlable de forma paramétrica e interactiva.
 
-### Semanas 07 y 08: Reconocimiento y creación de sonido
+### Semanas 09 y 10: Sistemas de grillas aplicadas
 
-Aprenderemos fundamentos de cómo funciona el sonido en nuestro computador y cómo los humanos lo percibimos. Con esto estudiaremos los rudimentos de reconocimiento de sonido con inteligencia artificial, para crear páginas web interactivas que responden a nuestro micrófono.
+Aprenderemos cómo reconocer, usar y programar distintos sistemas de grillas para ayudar y guiar nuestros diseños gráficos y web. Aprenderemos a usar grillas para determinar la ubicación en el espacio 2D de nuestros elementos de diseño, y cómo combinar grillas para crear diseños aplicados a portadas de libros y de álbumes de música.
 
-### Semanas 09 y 10: Ética y privacidad
+### Semanas 11 y 12: Sistemas de diseño de identidades gráficas
 
-Abordaremos problemáticas de ética y privacidad en inteligencia artificial, y revisaremos casos de vigilancia de ciudadanos a nivel de estado y de empresas. Aprenderemos sobre activistas, organizaciones y académicas a lo largo del mundo que están trabajando por nuestros derechos digitales.
+Aprenderemos distintos sistemas de diseños y manuales de identidad gráficas de distintas entidades, como New York City Transit Authority de NYC, MIT Media Lab y NASA. Aprenderemos a confeccionar nuestros propios manuales simples de forma textual y programática.
 
-### Semanas 11 y 12: Reconocimiento de humanos
+### Semanas 13 y 14: Repetición y aleatoreidad
 
-Aprenderemos cómo usar inteligencia artificial en conjunto con la cámara de nuestro computador para detectar nuestro cuerpo y con esto manipular multimedia en nuestro computador.
+Aprenderemos a realizar repeticiones de forma algorítmica, para crear sistemas de diseños que serían difíciles de hacer de forma manual o con la combinación ratón teclado. Estudiaremos ejemplos aplicados de repetición en diseño gráfico contemporáneo.
 
-### Semanas 13 y 14: Profundización en herramientas computacionales
+También aprenderemos estrategias para introducira leatoreidad a nuestros diseños, para hacer variaciones espaciales, de colores y de tipografía, para lograr mayor variedad y sistemas que están más cerca de la naturaleza análoga que de la computación digital.
 
-Profundizaremos en distintos aspectos de computación útiles para diseñadoras y artistas, incluyendo captura de datos, bases de datos, herramientas en la nube y en computadoras personales para el desarrollo de algoritmos de inteligencia artificial, con un énfasis en herramientas que protegen nuestra privacidad y de bajo costo.
-
-### Semanas 15 y 16: Proyecto final
+### Semanas 15 y de actividades especiales: Cierre de semestre y futuro
 
 Desarrollo de proyectos finales, trabajo supervisado, horarios de atención de ayuda y evaluaciones finales.
 
 ## Referencias y créditos
 
 * Curso basado en el original Programming Design Systems de Rune Madsen, disponible en https://www.runemadsen.com/syllabi/programming-design-systems/
-* 
-
-* [https://www.sinestesia.cc/post/escritura-creativa-con-inteligencia-artificial](https://www.sinestesia.cc/post/escritura-creativa-con-inteligencia-artificial)
-* [https://github.com/ml5js/training-charRNN](https://github.com/ml5js/training-charRNN)
-* [https://medium.com/processing-foundation/from-simple-to-advanced-ml5-js-70d6730b360b](https://medium.com/processing-foundation/from-simple-to-advanced-ml5-js-70d6730b360b)
-* [https://ml5-fellowship-2020.github.io/examples/](https://ml5-fellowship-2020.github.io/examples/)
-* [https://www.anteism.com/shop/making-pictures-with-generative-adversarial-networks-casey-reas](https://www.anteism.com/shop/making-pictures-with-generative-adversarial-networks-casey-reas)
+* Libro web gratuito en progreso Programming Design Systems por Rune Madsen, disponible en https://programmingdesignsystems.com/
+* Libro Introducción a p5.js por el equipo de la Processing Foundation, disponible en PDF y paga-lo-que-quieras, disponible en https://processingfoundation.press/product/introduccion-a-p5-js/.
+* Editor web de p5.js, disponible en https://editor.p5js.org/
+* Libro Creative Code: Aesthetics + Computation, por John Maeda
+* Libro Design by Numbers, por John Maeda
+* Circle Morphing, por Golan Levin, disponible en https://www.youtube.com/watch?v=mvgcNOX8JGQ

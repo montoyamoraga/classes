@@ -82,7 +82,7 @@ y documentarán su proceso.
 
 ### Semanas 15 y de actividades especiales: Cierre de semestre y futuro
 
-Aprenderemos sobre recursos para seguir aprendiendo después de este curso sobre la programación y construcción de instrumentos musicales digitales
+Aprenderemos sobre recursos para seguir aprendiendo después de este curso sobre la programación y construcción de instrumentos musicales digitales.
 
 Realizaremos el ierre del semestre y acta de notas y actividades de retroalimentación.
 

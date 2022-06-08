@@ -19,7 +19,6 @@ Adicionalmente, usaremos los software gratuitos:
 
 * Navegadores web Chrome y Firefox.
 * Arduino: hardware y software para programar microcontroladores.
-* Pure Data: entorno de programación gráfico para arte sonoro.
 * Git y Github: entorno de desarrollo y publicación de software.
 
 Los estudiantes deberán adquirir y traer a clases los siguientes hardware:

@@ -1,6 +1,6 @@
-# Introducción a la inteligencia artificial y web interactiva
+# Diseño de instrumentos musicales digitales
 
-Una propuesta por Aarón Montoya-Moraga para la Facultad de Arquitectura y Urbanismo de la Universidad de Chile.
+Una propuesta por Aarón Montoya-Moraga para la Escuela de Diseño y la Facultad de Arquitectura y Urbanismo de la Universidad de Chile.
 
 ## Requerimientos
 
@@ -10,22 +10,23 @@ Una propuesta por Aarón Montoya-Moraga para la Facultad de Arquitectura y Urban
 
 ## Conocimientos previos
 
-Curso diseñado y escrito para gente sin conocimientos previos de computación, programación o de inteligencia artificial o de artes o de inglés.
+Curso diseñado y escrito para gente sin conocimientos previos de computación o de artes o de inglés
 
 ## Herramientas de software
 
-* [https://p5js.org/](https://p5js.org/): biblioteca de JavaScript para confeccionar páginas web con gráfica y multimedia, con opciones interactivas y dinámicas.
-* [https://ml5js.org/](https://ml5js.org/): biblioteca de JavaScript para inteligencia artificial, para construir algoritmos y modelos con texto, imagen, sonido.
+* Arduino: hardware y software para programar microcontroladores.
+* Pure Data: entorno de programación gráfico para arte sonoro.
+* Teensy: microcontroladores usados para creación de instrumentos musicales digitales.
 
 ## Contenidos
 
 Descripción:
 
-Las y los estudiantes aprenderán los fundamentos de páginas web, incluyendo rudimentos de HTML, CSS y JavaScript, para la creación de páginas web estáticas y dinámicas. En paralelo, aprenderán los fundamentos de captura de datos y entrenamiento de modelos de inteligencia artificial, para reconocimiento y manipulación de información multimedia, incluyendo texto, imagen y sonido.
+Las y los estudiantes aprenderán los fundamentos de la programación de instrumentos musicales digitales.
 
-El curso tiene el objetivo de explorar la creación colaborativa de multimedia entre humano y computador, las posibilidades plásticas de la inteligencia artificial para escribir y manipular contenidos, y aprender distintas técnicas para crear bases de datos para entrenar algoritmos de inteligencia artificial que aprendan a clasificar nuestros datos originales.
+En la primera mitad del curso usaremos el software de fuente abierta para música por computador llamado Pure Data, para aprender a programar los componentes básicos de sonido digital, incluyendo osciladores, filtros, mezcladores y efectos.
 
-Se incluyen componentes políticos y cívicos, con un énfasis en las problemáticas y peligros de las herramientas de inteligencia artificial en manos de estados policiales y de empresas corruptas. Analizaremos casos de estudio sobre ética en inteligencia artificial. 
+En la segunda mitad del curso usaremos el microcontrolador Teensy, una variante de Arduino, para aprender a crear instrumentos digitales, incluyendo sintetizadores monofónicos, samplers y efectos de audio. 
 
 ## Programa
 
@@ -65,7 +66,10 @@ Profundizaremos en distintos aspectos de computación útiles para diseñadoras 
 
 Desarrollo de proyectos finales, trabajo supervisado, horarios de atención de ayuda y evaluaciones finales.
 
-## Referencias
+## Referencias y créditos
+
+* Curso basado en el original Programming Design Systems de Rune Madsen, disponible en https://www.runemadsen.com/syllabi/programming-design-systems/
+* 
 
 * [https://www.sinestesia.cc/post/escritura-creativa-con-inteligencia-artificial](https://www.sinestesia.cc/post/escritura-creativa-con-inteligencia-artificial)
 * [https://github.com/ml5js/training-charRNN](https://github.com/ml5js/training-charRNN)
